@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<script> 
+$('html,body').scrollTop(0);
+</script>
 
 <head>
   <title> Experiment Questionaire </title>
@@ -45,54 +48,41 @@
 
 <body class="body">
 
-<!--
-BEFORE THE PAGE CONTENT
-You might want to cache the images you are using in the experiment
-if timings are going to be recorded during the experiment.
-Below is an example of how to load an image without showing it.
--->
-<div style="display:none">
-  <!-- List images here in the same syntax -->
-  <!-- <img src = "___image src____" /> -->
-  <img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" />
-</div>
-
-
-
-<!-- Start of the actual, visible body of the file -->
-<form style="width: 40em;">
-
+<!-- Start of the actual, visible body of the file --><form style="width: 40em;">
 <h2><strong>INSTRUCTIONS</strong></h2>
-<p>In this experiment, you will listen to sentences and then answer questions about what you heard.</p>
-<h3><span style="text-decoration: underline;"><strong>The context of the sentences: Children playing with toy animals!</strong></span></h3>
-<p>Each sentence will describe something that a child is acting out with a toy animal. For example, you may hear, <em>"Jane loves to make pastries with the moose!"</em> In this sentence, you could imagine Jane making fake treats with her moose stuffed animal.&nbsp;</p>
-<p>Another example: <em>"The cat really likes pizza for breakfast."</em> We may ask you a question like...</p>
-<table>
+<p>In this experiment, you will read sentences that describe children playing with various toys. Your job is to rate the plausibility of each sentence.</p>
+<h3><span style="text-decoration: underline;"><strong>How should I rate '<em>plausibility</em>'?</strong></span></h3>
+<p>You will have a 1-7 scale that goes from 'Very Implausible' (1) to 'Very Plausible' (7). Plausibility should reflect how likely the described event is to actually happen given the context of children playing with a set of toys.&nbsp;</p>
+<h3><span style="text-decoration: underline;"><strong>What kind of toys do the children have?</strong></span></h3>
+<p>The children described in the sentences have various <em>stuffed animals</em> (e.g. frogs, leopards) and <em><strong>both</strong></em> <em>big and small objects</em> (e.g. candle, feather, tiny candle, tiny feather).&nbsp;The image below shows a typical set of toys that the children can play with in this game.</p>
+<p>&nbsp;</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto; width: 450px; height: 350px;" src="https://github.com/anthonyyacovone/Ibex-farm_Media/blob/master/S%26T_VWP.png?raw=true" width="421" height="337" /></p>
+<p><em>Some example sentences and ratings based on the set of toys above:</em></p>
+<table style="width: 700px;">
 <tbody>
 <tr>
-<td><strong>Q:&nbsp;</strong>Who really likes pizza for breakfast?</td>
-<td><strong>&nbsp;A:</strong> The cat!&nbsp;</td>
+<td style="width: 388px;"><strong>Sentence:&nbsp;</strong>Jane hugged the frog that has a feather!&nbsp;</td>
+<td style="width: 212px;"><strong>&nbsp;Rating:</strong>&nbsp;Very plausible (7)</td>
 </tr>
 <tr>
-<td><strong>Q:</strong> What does the cat really like?</td>
-<td><strong>&nbsp;A:</strong> Pizza for breakfast!&nbsp;</td>
+<td style="width: 388px;"><strong>Sentence:</strong>&nbsp;Jimmy licked the leopard!</td>
+<td style="width: 212px;"><strong>&nbsp;Rating:</strong>&nbsp; Less plausible (5)</td>
 </tr>
 <tr>
-<td><strong>Q:</strong> What does the cat like for breakfast?</td>
-<td><strong>&nbsp;A:</strong> Pizza!&nbsp;</td>
+<td style="width: 388px;"><strong>Sentence:</strong>&nbsp;Kim drank the candle!</td>
+<td style="width: 212px;"><strong>&nbsp;Rating:</strong>&nbsp;Very implausible (1)</td>
 </tr>
 </tbody>
 </table>
-<p>After listening to the sentence, you will hit continue to go to the question screen. You will have <strong>as much time as needed</strong> to fully read the question and provide your answer. Simply type your answer into the input box and then hit 'Enter'.&nbsp;</p>
-<h3 ><span style="text-decoration: underline;"><strong>The fun part: You will hear both fast and slow sentences!&nbsp;</strong></span></h3>
+<h3><span style="text-decoration: underline;"><strong>Will I see pictures like the one above?&nbsp;</strong></span></h3>
 <div>
-<p>The interesting part of this study is that some of the sentences will be played to you at&nbsp;<strong>double the speed</strong>! <br /> It will sound like listening to an audiobook or a video at 2 times the original rate.&nbsp;</p>
-<p>You will hear practice sentences in order to get used to the faster speeds.&nbsp;</p>
+<p>During the experiment, you will&nbsp;<strong>not</strong> see pictures of the toys that the child played with. However, all of the toys decribed will be stuffed animals and big/small objects like the ones above!&nbsp;</p>
+<p>You will read some practice sentences in order to get used to the rating scale! You can either click the box with your rating or simply hit the number key on your keyboard.&nbsp;</p>
 </div>
 <div>
 <p><strong>Instruction Comprehesion Questions:&nbsp;</strong><br /><em>1. Will the sentences involve actual animals or toy animals that children are playing with?</em><br /><input class="obligatory" name="question1" type="radio" value="left" /><label for="q1left"> Actual animals!</label>&nbsp;<input name="question1" type="radio" value="right" /><label for="q1right">&nbsp;The animals are actually child toys!&nbsp;</label></p>
-<p><em>2. Do you have a set time period to answer the question?</em><br /><input class="obligatory" name="question2" type="radio" value="left" /><label for="q2left"> Yes</label> <input name="question2" type="radio" value="right" /><label for="q2right">No</label></p>
-<p>3<em>. Will the sentences be played at normal speeds, faster speeds, or at both speeds?</em><br /><input class="obligatory" name="question3" type="radio" value="left" /> Only fast speeds <input name="question3" type="radio" value="right" /> A mix of both speeds</p>
+<p><em>2. During the experiment, will I see pictures of the toys described in the sentence that I am rating?</em><br /><input class="obligatory" name="question2" type="radio" value="left" /><label for="q2left"> Yes</label> <input name="question2" type="radio" value="right" /><label for="q2right">No</label></p>
+<p>3<em>. Is it true that the most unlikely or lowest plausibility rating is a 1?</em><br /><input class="obligatory" name="question3" type="radio" value="left" /> Yes&nbsp;<input name="question3" type="radio" value="right" /> No</p>
 </div>
 </form>
-  </html> 
+  </html>

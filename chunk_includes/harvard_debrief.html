@@ -1,9 +1,61 @@
-<div style="width: 40em;">
+<!DOCTYPE html>
+<html lang="en">
+<script> 
+$('html,body').scrollTop(0);
+</script>
+
+<head>
+  <title> Experiment Questionaire </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+    p {
+      text-align: left;    }
+    
+    body {
+      background: black;
+      text-align: left;
+      font-size: 88%;
+      font-family: Century Gothic;
+      text-align: left;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .body{
+      width: 100%;
+    }
+
+    form{
+      margin: -100 auto 10;
+      width: 90%;
+      clear: both;
+      padding: 2%;
+      border: 1px;
+      border-style: solid;
+      background-color: black;
+    }
+
+    input[type=submit] {
+      width: 135px;
+      height: 70px;
+      cursor:pointer;
+    }
+  </style>
+</head>
+
+
+<body class="body">
+
+
+<form style="width: 40em;">
+<div style="width: 40em; text-align: left;">
 <h2 style="text-align: center;"><strong>DEBRIEFING:</strong></h2>
-<p><strong><u>What is this study about?</u></strong></p>
-<ul>
+<p style="text-align: left;"><strong><u>What is this study about?</u></strong></p>
+<ul style="text-align: left;">
 <li>
-<p>This study examines how people resolve sentences with two meanings.</p>
+<p>This study is part of a larger study that examines how people resolve sentences with two meanings.</p>
 <ul>
 <li>
 <p>For example:&nbsp;<em>"I saw the man with the telescope" </em>could mean...</p>
@@ -39,23 +91,23 @@
 <p>We are investigating how speed of spoken sentences influences our ability to use information about the object (e.g. <em>telescopes</em>, <em>donuts</em>) to guide our interpretations.&nbsp;</p>
 </li>
 </ul>
-<p><strong><u>How is the study conducted?</u></strong></p>
-<p>In this task, you saw 18 sentences of varying speeds. You listened to sentences like&nbsp;<em>"Jeff saw the man with the telescope"</em> and then answered questions. The questions asked&nbsp;<em>"What did Jeff see?</em><em>" </em>which could either be <em>"the man"</em> or <em>"the man with the telescope"</em>.&nbsp;We are looking to see how speed affects which answer you provided to the questions.&nbsp;</p>
-<p><strong>Final questions: </strong></p>
+<p style="text-align: left;"><strong><u>How is the study conducted?</u></strong></p>
+<p style="text-align: left;">In this task, you saw 20 sentences with various animals, actions, and toys. We are interested in what people think of the particular toy pairings that we used. More importantly, we want to see if any objects are highly implausible for a particular animal to have with them. For example, is a '<em>leopard with a ring</em>' more implausible than a '<em>fish with a fin</em>' in this toy game.</p>
+<p style="text-align: left;">In the real world, yes! A fish can always have a fin, but a leopard almost never has a ring.&nbsp;We are looking to see if putting the sentences in the context of a children's game makes them more equally plausible.&nbsp;</p>
+<p style="text-align: left;"><strong>Final questions: </strong></p>
 <strong>Have you participated in this experiment before?</strong> (Your compensation will not be affected)
-<div>&nbsp;</div>
-<input id="yes" class="obligatory" name="priorExpt" type="radio" value="yes" /><label for="yes">Yes</label> <input id="no" name="priorExpt" type="radio" value="no" /><label for="no">No</label><br /><br /><strong>How difficult was it to understand the faster sentences?</strong>
-<div>&nbsp;</div>
-<input id="veryDiff" class="obligatory" name="fastComp" type="radio" value="5" /><label for="veryDiff">Very Difficult (Almost Impossible)</label><br /> <input id="Diff" name="fastComp" type="radio" value="4" /><label for="Diff">Difficult (But Doable)</label><br /> <input id="soso" name="fastComp" type="radio" value="3" /><label for="soso">So-so (Definitely Doable)</label><br /> <input id="easy" name="fastComp" type="radio" value="2" /><label for="easy">Easy</label><br /> <input id="veryEasy" name="fastComp" type="radio" value="1" /><label for="veryEasy">Very Easy (No Difficulties)</label></div>
-<div style="width: 40em;">&nbsp;</div>
-<div style="width: 40em;"><br />Any other comments that you would like to share with us?</div>
-<div style="width: 40em;"><br /> <textarea style="margin: 0px; width: 409px; height: 41px;" cols="40" name="comments" rows="1"></textarea><br /><br />
-<p><strong><u>How to contact the researcher:</u></strong> If you have questions or concerns about this research, please contact...</p>
-<p>Anthony Yacovone (anthony_yacovone@g.harvard.edu)</p>
-<p>You can also contact our lab at:</p>
-<p>1080 William James Hall<br /> 33 Kirkland Street<br /> Cambridge, MA 02138<br /> (617) 496-7175</p>
-<p>The faculty member supervising this work is Jesse Snedeker (snedeker@wjh.harvard.edu).</p>
-<p>Whom to contact about your rights in this research: For questions, concerns, suggestions, or complaints that are not being addressed by the researcher, or research-related harm:</p>
-<p>Committee on the Use of Human Subjects in Research at Harvard University<br /> 1414 Massachusetts Avenue, Second Floor<br /> Cambridge, MA 02138<br /> (617) 496-CUHS (2847)<br /><a href="mailto:cuhs@fas.harvard.edu"> cuhs@fas.harvard.edu</a></p>
-<p>&nbsp;</p>
+<div style="text-align: left;">&nbsp;</div>
+<input id="yes" class="obligatory" name="priorExpt" type="radio" value="yes" /><label for="yes">Yes</label> <input id="no" name="priorExpt" type="radio" value="no" /><label for="no">No</label><br /><br /><strong>Did you feel like you used the entire rating scale?</strong>
+<div style="text-align: left;">&nbsp;</div>
+<input id="veryDiff" class="obligatory" name="rating" type="radio" value="yes" /><label for="yes">Yes (I used at least 4 of the rating options)</label><br /> <input id="no" name="rating" type="radio" value="no" /><label for="no">No (I used primarily 1 or 2 different rating options)</label></div>
+<div style="width: 40em; text-align: left;"><br />Any other comments that you would like to share with us?</div>
+<div style="width: 40em; text-align: left;"><br /> <textarea style="margin: 0px; width: 409px; height: 41px;" cols="40" name="comments" rows="1"></textarea><br /><br />
+<p style="text-align: left;"><strong><u>How to contact the researcher:</u></strong> If you have questions or concerns about this research, please contact...</p>
+<p style="text-align: left;">Anthony Yacovone (anthony_yacovone@g.harvard.edu)</p>
+<p style="text-align: left;">You can also contact our lab at:</p>
+<p style="text-align: left;">1080 William James Hall<br /> 33 Kirkland Street<br /> Cambridge, MA 02138<br /> (617) 496-7175</p>
+<p style="text-align: left;">The faculty member supervising this work is Jesse Snedeker (snedeker@wjh.harvard.edu).</p>
+<p style="text-align: left;">Whom to contact about your rights in this research: For questions, concerns, suggestions, or complaints that are not being addressed by the researcher, or research-related harm:</p>
+<p style="text-align: left;">Committee on the Use of Human Subjects in Research at Harvard University<br /> 1414 Massachusetts Avenue, Second Floor<br /> Cambridge, MA 02138<br /> (617) 496-CUHS (2847)<br /><a href="mailto:cuhs@fas.harvard.edu"> cuhs@fas.harvard.edu</a></p>
 </div>
+</form> </html>
